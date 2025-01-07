@@ -1,5 +1,5 @@
 import java.util.*;
- class Customer {
+ class Demo010 {
     
         String Cust_name = "rishi";
         int Account_no = 1234567890;
@@ -18,7 +18,8 @@ import java.util.*;
     public class Demo010{
         public static void main(String[] args){
             Demo010 obj = new Demo010();
-            obj
+            obj.accept_details();
+            obj.Display_details();
 
         }
     }
