@@ -1,15 +1,20 @@
-public class Solution {
-    public boolean isPalindrome(int x) {
-        if (x < 0) {
+class LTCode001 {
+    public static boolean isPalindrome(int x) {
+        if (x < 0 || (x % 10 == 0 && x != 0)) {
             return false;
         }
-        int originalNumber = x;
-        long reversedNumber = 0;
-        while (x != 0) {
+        int reversed = 0;
+        int original = x;
+        while (x > 0) {
             int digit = x % 10;
-            reversedNumber = reversedNumber * 10 + digit;
+            reversed = reversed * 10 + digit;
             x /= 10;
         }
-        return originalNumber == reversedNumber;
+        return original == reversed;
+    }
+    public static void main(String[] args) {
+        System.out.println(isPalindrome(121));
+        System.out.println(isPalindrome(-121));
+        System.out.println(isPalindrome(10));
     }
 }
