@@ -35,7 +35,7 @@ class PartTimeEmployee extends EmployeeDetails {
         System.out.println("Hourly Rate: " + hourlyRate);
     }
 }
-public class PS004 {
+public class Ps004 {
     public static void main(String[] args) {
         new FullTimeEmployee("Mahesh", 101, 50000, "Life Insurance").showDetails();
         System.out.println();
