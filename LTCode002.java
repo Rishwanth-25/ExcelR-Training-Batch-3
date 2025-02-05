@@ -1,12 +1,7 @@
-
-
 import java.util.Scanner;
-
-
 class Solution {
     public int reverse(int x) {
         int reversed = 0;
-
         while (x != 0) {
             int digit = x % 10; 
             x /= 10;
@@ -23,8 +18,6 @@ class Solution {
         return reversed;
     }
 }
-
-
 public class LTCode002 {
     public static void main(String[] args) {
         System.out.print("Enter the number: ");
